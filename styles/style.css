@@ -58,7 +58,7 @@ body {
 }
 
 body {
-  background: #eee;
+  background: #ffffff;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
@@ -66,10 +66,17 @@ body {
   padding: 0;
 }
 
+h2 {
+    margin-top: 100px;
+    font-size: 50px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #c41717;
+}
+
 .swiper {
   width: 50%;
   height: 100%;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .swiper-slide {
