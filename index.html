@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -37,5 +39,71 @@
             </a>    
         </div>
     </footer>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/Blusapreta.jpg"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/blusalistrada.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/blusapadrao.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/short.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/jaqueta.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/meia.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/blusabranca.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/jaquetafeminia.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/vestido.jpg" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          centeredSlides: false,
+          slidesPerGroupSkip: 1,
+          grabCursor: true,
+          keyboard: {
+            enabled: true,
+          },
+          breakpoints: {
+            769: {
+              slidesPerView: 2,
+              slidesPerGroup: 2,
+            },
+          },
+          scrollbar: {
+            el: ".swiper-scrollbar",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
 </body>
 </html>
