@@ -60,9 +60,41 @@ body {
     line-height: 26px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    margin-top: 30px;
+    margin-top: -150px;
+    margin-left: -100px;
 }
 
 p {
     margin: 0px 10px;
 }
+
+.size-buttons {
+    text-align: center;
+    margin-top: 20px; 
+  }
+  
+  .size-button {
+    display: flex;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid rgb(219, 52, 52);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .size-button:hover {
+    background-color: rgb(141, 0, 0);
+    color: #fff;
+  }
+
+  .preco {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .descricao {
+    text-align: center;
+  }

@@ -71,12 +71,15 @@ h2 {
     font-size: 50px;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #c41717;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: fit-content;
 }
 
 .swiper {
   width: 50%;
   height: 100%;
-  margin-top: 200px;
+  margin-top: 40px;
 }
 
 .swiper-slide {

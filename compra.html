@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/compra.css" />
+
   </head>
   <body>
     <header class="header">
@@ -23,14 +24,38 @@
     </header>
 
     <footer>
-        <div class="venda">
-            <div>
-            <img class="blusa" src="./assets/blusa.png" alt="">
-            </div>
-            <div class="descricao">
-                Camisa do Flamengo Ninneteen Brazile
-            </div>
+      <div class="venda">
+        <div>
+          <img class="blusa" src="./assets/blusa.png" alt="" />
         </div>
+        <div class="descricao">
+          Camisa do Flamengo Ninneteen Brazile
+
+          <p class="preco">Preço: R$ 399,90</p>
+
+          <!-- Botões para tamanhos de camisa -->
+          <div class="size-buttons">
+            <button class="size-button" onclick="selectSize('P')">P</button>
+            <button class="size-button" onclick="selectSize('M')">M</button>
+            <button class="size-button" onclick="selectSize('G')">G</button>
+            <button class="size-button" onclick="selectSize('GG')">GG</button>
+            <button class="size-button" onclick="selectSize('XGG')">XGG</button>
+          </div>
+
+          <!-- Botão de comprar -->
+          <div class="size-buttons">
+            <button class="size-button" onclick="selectSize('COMPRAR')">COMPRAR</button>
+          </div>
+        </div>
+      </div>
     </footer>
+
+    <script>
+      // Adapte esta função conforme necessário para lidar com o tamanho selecionado
+      function selectSize(size) {
+        alert('Você selecionou o tamanho: ' + size);
+        // Adicione aqui a lógica para lidar com o tamanho selecionado
+      }
+    </script>
   </body>
 </html>
