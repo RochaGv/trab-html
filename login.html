@@ -9,15 +9,30 @@
 <body>
     <main>
         <div class="login-container">
-            <h2>Tela de Login</h2>
+            <header class="header-container">
+                <img class="fla" src="./assets/fla-logo.png" />
+                <h1>Login</h1>
+                <h2>Faça o login para continuar</h2>
+            </header>
             <form>
-                <input type="text" placeholder="Nome de Usuário" name="username" required>
-                <input type="password" placeholder="Senha" name="password" required>
-                <button type="submit">Entrar</button>
-                <a target="_self" href="./index.html">
-                    <button type="button">Voltar</button>
-                </a>
-            </form>           
+                <div class="input-container">
+                    <h3 class="input-title">
+                        Nome de Usuário
+                    </h3>
+                    <input type="text" placeholder="Digite o nome de usuário">
+                </div>
+                <div class="input-container">
+                    <h3 class="input-title">
+                      Senha
+                    </h3>
+                    <input type="text" placeholder="Digite a senha">
+                </div>
+            </form>
+
+            <div class="buttons-container">
+                <button class="enter">Entrar</button>
+                <a class="return" target="_self" href="./index.html">Voltar</a>
+            </div>
         </div>
     </main>
 </body>

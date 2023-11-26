@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/compra.css" />
 
@@ -48,9 +51,9 @@
 
           <!-- Botão de comprar -->
           <div class="buy-container">
-            <img src="" alt="" class="minus">
+            <img src="./assets/remove.svg" alt="" class="minus">
             <input type="text" readonly value="1">
-            <img src="" alt="" class="plus">
+            <img src="./assets/add.svg" class="plus">
             <button class="buy-button" onclick="selectSize('COMPRAR')">COMPRAR</button>
           </div>
         </div>
@@ -64,5 +67,95 @@
         // Adicione aqui a lógica para lidar com o tamanho selecionado
       }
     </script>
+
+    
+<div>
+  <div class="h2">
+      <h2>Produtos Similares</h2>
+  </div>
+<div class="swiper mySwiper">
+<div class="swiper-wrapper">
+  <div class="swiper-slide">
+    <div class="card">
+      <img src="./assets/Blusapreta.jpg" />
+    </div>
+  </div>
+  <div class="swiper-slide">
+    <div class="card">
+      <img src="./assets/blusalistrada.png" />
+    </div>
+  </div>
+  <div class="swiper-slide">
+    <div class="card">
+      <img src="./assets/blusapadrao.png" />
+    </div>
+  </div>
+  <div class="swiper-slide">
+    <div class="card">
+      <img src="./assets/short.jpg" />
+    </div>
+  </div>
+  <div class="swiper-slide">
+    <div class="card">
+      <img src="/assets/jaqueta.jpg" />
+    </div>
+  </div>
+  <div class="swiper-slide">
+    <div class="card">
+      <img src="./assets/meia.jpg" />
+    </div>
+  </div>
+  <div class="swiper-slide">
+    <div class="card">
+      <img src="./assets/blusabranca.jpg" />
+    </div>
+  </div>
+  <div class="swiper-slide">
+    <div class="card">
+      <img src="./assets/jaquetafeminia.jpg" />
+    </div>
+  </div>
+  <div class="swiper-slide">
+    <div class="card">
+      <img src="./assets/vestido.jpg" />
+    </div>
+  </div>
+</div>
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-scrollbar"></div>
+<div class="swiper-pagination"></div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  centeredSlides: false,
+  slidesPerGroupSkip: 1,
+  grabCursor: true,
+  keyboard: {
+    enabled: true,
+  },
+  breakpoints: {
+    769: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+</script>
   </body>
 </html>
