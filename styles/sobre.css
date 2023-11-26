@@ -37,8 +37,36 @@ header {
 }
 
 .registro {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ajuda {
+display: flex;
+  font-weight: bold;
+  font-family:'Roboto', sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.sobre {
+display: flex;
+  font-weight: bold;
+  font-family:'Roboto', sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.login {
+display: flex;
+  font-weight: bold;
+  font-family:'Roboto', sans-serif;   
+  text-decoration: none;
+  color: #c41717;
+  background-color: rgb(255, 255, 255);
+  padding: 12px 24px;
+  border-radius: 4px;
 }
 
 p {

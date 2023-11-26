@@ -9,26 +9,37 @@
 <body>
     <main>
         <div class="login-container">
-            <h2>Formulário de Contato</h2>
+            <header class="header-container">
+                <img class="fla" src="./assets/fla-logo.png" />
+                <h2>Formulário de Contato</h2>
+            </header>
             <form>
-                <div class="formulario">
-                  <div class="campo">
-                
-                </div class="campo">
-                <input type="text" placeholder="Nome de Usuário" name="username" required>
-                <input type="password" placeholder="Senha" name="password" required>
-                <div class="campo">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="input-container">
+                    <h3 class="input-title">
+                        Nome de Usuário
+                    </h3>
+                    <input type="text" placeholder="Digite o nome de usuário">
                 </div>
-                <div class="campo">
+                <div class="input-container">
+                    <h3 class="input-title">
+                      Senha
+                    </h3>
+                    <input type="text" placeholder="Digite a senha">
+                </div>
+                <div class="input-container">
                     <label for="duvida">Comentário</label>
                     <textarea id="duvida" name="duvida" rows="4" required></textarea>
                 </div>
-                <button type="submit">Enviar</button>
-                <a target="_self" href="./index.html">
-                    <button type="button">Voltar</button>
-                </a>
+                <div class="input-container">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite o seu email" required>
+                </div>
+            </form>
+                <div class="buttons-container">
+                    <button class="enter">Enviar</button>
+                    <a class="return" target="_self" href="./index.html">Voltar</a>
+                </div>
+            </div>
             </div>
             </form>           
         </div>
