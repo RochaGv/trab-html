@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
 * {
     padding: 0;
@@ -20,6 +20,37 @@ header {
     background-color: rgb(201, 30, 30);
 }
 
+.ajuda {
+    display: flex;
+      font-weight: bold;
+      font-family:'Roboto', sans-serif;
+      text-decoration: none;
+      color: #ffffff;
+  }
+  
+  .sobre {
+    display: flex;
+      font-weight: bold;
+      font-family:'Roboto', sans-serif;
+      text-decoration: none;
+      color: #ffffff;
+  }
+  
+  .login {
+    display: flex;
+      font-weight: bold;
+      font-family:'Roboto', sans-serif;   
+      text-decoration: none;
+      color: #c41717;
+      background-color: rgb(255, 255, 255);
+      padding: 12px 24px;
+      border-radius: 4px;
+  }
+
+  p {
+    margin: 0px 10px;
+}
+
 body {
     height: 200px;
 }
@@ -39,49 +70,60 @@ body {
 .registro {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .venda {
     display: flex;
     align-items: center;
+    width: 80%;
+    margin: 100px auto;
+    gap: 24px;
 }
 
 .blusa {
-    margin: 150px;
-    padding: 0;
-    border: 1px solid;
-    height: 500px;
-    width: 500px;
+    height: 580px;
+    width: 534px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.15);
 }
 
 .descricao {
     font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    line-height: 26px;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-top: -150px;
-    margin-left: -100px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
-p {
-    margin: 0px 10px;
+.title {
+    color: #777;
+    font-size: 20px;
+    text-align: left;
 }
 
 .size-buttons {
-    text-align: center;
-    margin-top: 20px; 
+    display: flex;
+    gap: 24px;
   }
   
   .size-button {
-    display: flex;
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border: 2px solid rgb(219, 52, 52);
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #777;
+  }
+
+  .buy-button {
+    background-color: #C91E1E;
+    border-radius: 4px;
+    width: 394px;
+    height: 54px;
+    text-align: center;
+    color: #fff;
+    border: none;
   }
   
   .size-button:hover {
@@ -93,6 +135,7 @@ p {
     text-align: left;
     font-size: 20px;
     margin-top: 10px;
+    font-weight: bold;
   }
 
   .descricao {

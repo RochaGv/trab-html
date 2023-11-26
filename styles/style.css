@@ -3,6 +3,8 @@
     margin: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+
 header {
     width: 100vw;
     height: 10vh;
@@ -25,13 +27,23 @@ header {
 }
 
 .footer {
-    display: flex;
     flex-wrap: nowrap;
     justify-content: center;
 }
 
+.card {
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+  margin-right: 16px;
+}
+
+.card img {
+  width: 346px;
+  height: auto;
+}
+
 .propaganda {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     margin-top: 80px ;
 }
@@ -45,6 +57,34 @@ header {
 .registro {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+.ajuda {
+  display: flex;
+    font-weight: bold;
+    font-family:'Roboto', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.sobre {
+  display: flex;
+    font-weight: bold;
+    font-family:'Roboto', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.login {
+  display: flex;
+    font-weight: bold;
+    font-family:'Roboto', sans-serif;   
+    text-decoration: none;
+    color: #c41717;
+    background-color: rgb(255, 255, 255);
+    padding: 12px 24px;
+    border-radius: 4px;
 }
 
 p {
@@ -70,14 +110,14 @@ h2 {
     margin-top: 100px;
     font-size: 50px;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: #c41717;
+    color: #000000;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 50px;
     width: fit-content;
 }
 
 .swiper {
-  width: 50%;
+  width: 60%;
   height: 100%;
   margin-top: 40px;
 }

@@ -16,20 +16,25 @@
           </a>
         </div>
         <div class="registro">
-          <a target="_blank" href="./help.html"> Ajuda </a>
-          <p>|</p>
-          <a target="_self" href="./login.html"> Login </a>
+          <a class= "sobre" target="_self" href="./sobre.html"> Sobre </a>
+          <p></p>
+          <a class="ajuda" target="_blank" href="./help.html"> Ajuda </a>
+          <p></p>
+          <a class= "login" target="_self" href="./login.html"> Login </a>
         </div>
       </div>
     </header>
 
-    <footer>
+    <main>
       <div class="venda">
-        <div>
+        <div class="blusa-container">
           <img class="blusa" src="./assets/blusa.png" alt="" />
         </div>
+
         <div class="descricao">
-          Camisa do Flamengo Ninneteen Brazile
+          <p class="title">
+            Camisa do Flamengo Ninneteen Brazile
+          </p>
 
           <p class="preco">Preço: R$ 399,90</p>
 
@@ -39,16 +44,18 @@
             <button class="size-button" onclick="selectSize('M')">M</button>
             <button class="size-button" onclick="selectSize('G')">G</button>
             <button class="size-button" onclick="selectSize('GG')">GG</button>
-            <button class="size-button" onclick="selectSize('XGG')">XGG</button>
           </div>
 
           <!-- Botão de comprar -->
-          <div class="size-buttons">
-            <button class="size-button" onclick="selectSize('COMPRAR')">COMPRAR</button>
+          <div class="buy-container">
+            <img src="" alt="" class="minus">
+            <input type="text" readonly value="1">
+            <img src="" alt="" class="plus">
+            <button class="buy-button" onclick="selectSize('COMPRAR')">COMPRAR</button>
           </div>
         </div>
       </div>
-    </footer>
+    </main>
 
     <script>
       // Adapte esta função conforme necessário para lidar com o tamanho selecionado
