@@ -14,12 +14,12 @@ body {
 }
 
 .login-container {
-    background-color: #ffffff;
-    width: 30%;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
+  background-color: #fff;
+  width: 600px;
+  padding: 48px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+  text-align: center;
 }
 
 main {
@@ -36,10 +36,10 @@ main {
 
 .login-container input[type="text"],
 .login-container input[type="password"] {
-    width: 90%;
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #915959;
+    border: 1px solid #C91E1E;
     border-radius: 3px;
 }
 
@@ -75,7 +75,7 @@ main {
     width: 90%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #915959;
+    border: 1px solid #C91E1E;
     border-radius: 3px;
   }
   
